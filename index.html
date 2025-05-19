@@ -1,64 +1,122 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bogdan Iovan - Java Freelancer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bogdan Iovan - Senior Java Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <h1>Bogdan Iovan</h1>
-    <p>Senior Java Developer | Consultant | Freelancer</p>
-    <p><a href="mailto:bogdan.iovan.dev@gmail.com">bogdan.iovan.dev@gmail.com</a> | <a href="https://www.linkedin.com/in/bogdan-iovan/" target="_blank">LinkedIn</a> | Timișoara, RO</p>
+    <div class="container header-container">
+      <h1>Bogdan Iovan</h1>
+      <p class="subtitle">Senior Java Developer | Consultant | Freelancer (Remote only)</p>
+      <nav class="contact-info">
+        <a href="mailto:bogdan.iovan.dev@gmail.com">bogdan.iovan.dev@gmail.com</a>
+        <span> | </span>
+        <a href="tel:+40749637330">+40 749 637 330</a>
+        <span> | </span>
+        <a href="https://www.linkedin.com/in/bogdan-iovan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span> | </span>
+        <span>Timisoara, Romania</span>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Senior Java Developer with 6+ years of experience. I'm available for remote freelance or contract-based work in Java backend or full-stack development.</p>
-  </section>
+  <main>
+    <section class="intro container">
+      <h2>About Me</h2>
+      <p>
+        I am a Senior Java Developer, Consultant, Contractor, and Freelancer with over 6 years of experience, exclusively focused on remote work opportunities.
+      </p>
+    </section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>Java</li>
-      <li>Spring Boot</li>
-      <li>Microservices</li>
-      <li>Hibernate</li>
-      <li>Liquibase / Flyway</li>
-      <li>SQL (MySQL, PostgreSQL)</li>
-      <li>React, AngularJS</li>
-      <li>Kibana / Grafana</li>
-    </ul>
-  </section>
+    <section class="experience container">
+      <h2>Experience</h2>
 
-  <section>
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>UniCredit</strong> – Senior Java FullStack Developer (May 2023 – Present)</li>
-      <li><strong>Edenred</strong> – Senior Java Developer (Aug 2022 – May 2023)</li>
-      <li><strong>Tarya</strong> – Senior Java Developer (Dec 2022 – Mar 2023)</li>
-      <li><strong>UnifiedPost</strong> – Java Fullstack Developer (Sep 2021 – Aug 2022)</li>
-      <li><strong>Tripletex</strong> – Java Developer (Jul 2020 – Sep 2021)</li>
-      <li><strong>FEV Europe GmbH</strong> – Java Developer (Mar 2019 – Jun 2020)</li>
-    </ul>
-  </section>
+      <article class="job">
+        <h3>Senior Java Fullstack Developer @ Unicredit <span class="date">May 2023 - Present</span></h3>
+        <p><em>Unicredit is a pan-European commercial bank operating in Italy, Germany, and Central and Eastern Europe.</em></p>
+        <p>
+          I contribute as a fullstack developer to two applications managing accounts of legal entities — one for bankers and another for company administrators performing various operations. My role includes developing new backend and frontend features.
+        </p>
+        <p><strong>Technologies:</strong> Java, Spring Boot, Microservices, Hibernate, Lombok, MySQL, Liquibase, Elasticsearch, React.</p>
+      </article>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Medical Project</strong> – System to detect COPD using biological signals (Python, SVM, KMeans, CMS50D+)</li>
-    </ul>
-  </section>
+      <article class="job">
+        <h3>Senior Java Developer @ Tarya <span class="date">Dec 2022 - Mar 2023</span></h3>
+        <p><em>Tarya is a leading FinTech service provider.</em></p>
+        <p>
+          Part of a new team responsible for banking statements, cards, and transactions modules. Focused on enhancing database performance and improving user experience.
+        </p>
+        <p><strong>Technologies:</strong> Java, Spring Boot, Microservices, Hibernate, Lombok, PostgreSQL, Flyway, PrimeFaces.</p>
+      </article>
 
-  <section>
-    <h2>Education</h2>
-    <p>BA in Computer Science, Timișoara (2015–2019)</p>
-    <p>MA in Software Engineering, Timișoara (2019–2021)</p>
-  </section>
+      <article class="job">
+        <h3>Senior Java Developer @ Edenred <span class="date">Aug 2022 - May 2023</span></h3>
+        <p><em>Edenred is a leading European mobility service provider.</em></p>
+        <p>
+          Developer on the Core team delivering APIs for multiple clients. Involved in architectural decisions, refactoring, and migration tasks to enhance application performance.
+        </p>
+        <p><strong>Technologies:</strong> Java, Spring Boot, Microservices, Hibernate, Lombok, MySQL, Liquibase, Kibana.</p>
+      </article>
+
+      <article class="job">
+        <h3>Java Fullstack Developer @ Unified Post <span class="date">Sept 2021 - Aug 2022</span></h3>
+        <p><em>Unified Post is a leading payment service provider in Europe.</em></p>
+        <p>
+          Worked on payment processing systems. Successfully led migration from an outdated card payment processor to a new platform.
+        </p>
+        <p><strong>Technologies:</strong> Java, Spring Boot, Microservices, Hibernate, Lombok, PostgreSQL, Liquibase, Angular.</p>
+      </article>
+
+      <article class="job">
+        <h3>Java Developer @ Tripletex <span class="date">Jul 2020 - Sept 2021</span></h3>
+        <p><em>Tripletex is a fast-growing Norwegian startup providing a cloud-based ERP system.</em></p>
+        <p>
+          Contributed to the banking module, including developing a cash-flow prediction widget for the next three months, enabling loan applications — handling both backend and frontend.
+        </p>
+        <p><strong>Technologies:</strong> Java, Spring Boot, Hibernate, MySQL, Flyway, ReactJS, Grafana, Kibana.</p>
+      </article>
+
+      <article class="job">
+        <h3>Java Developer @ Fev Europe GmbH <span class="date">Mar 2019 - Jun 2020</span></h3>
+        <p><em>Fev Europe GmbH provides software solutions for agricultural businesses across Europe.</em></p>
+        <p>
+          Worked on backend and frontend tasks, including a significant frontend refactoring project migrating from Elm to AngularJS, reusing HTML/CSS and rewriting functional components.
+        </p>
+        <p><strong>Technologies:</strong> Java, OSGI, Spring Boot, Hibernate, PostgreSQL, Liquibase, AngularJS, Elm.</p>
+      </article>
+    </section>
+
+    <section class="education container">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>MSc Software Engineering</strong>, Polytechnic University of Timisoara (2019 - 2021)</li>
+        <li><strong>BSc Computer Science</strong>, Polytechnic University of Timisoara (2015 - 2019)</li>
+      </ul>
+    </section>
+
+    <section class="projects container">
+      <h2>Personal Project</h2>
+      <p>
+        Developed a medical system analyzing biological signals (pulse rate, oxygen saturation, respiratory rate) to diagnose COPD and its stages.
+      </p>
+      <p><strong>Technologies:</strong> Python, Pulse-oximeter CMS50D+, SVM, KMeans.</p>
+    </section>
+
+    <section class="skills container">
+      <h2>Main Skills</h2>
+      <p>Java, Spring Boot, Microservices, SQL, Liquibase, Hibernate, React, Elasticsearch</p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Bogdan Iovan</p>
+    <div class="container footer-container">
+      <p>© 2025 Bogdan Iovan — <a href="https://www.linkedin.com/in/bogdan-iovan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </div>
   </footer>
 </body>
 </html>
